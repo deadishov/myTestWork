@@ -1,0 +1,200 @@
+.slider {
+    background: #3A4574;
+    position: relative;
+    padding: 220px 0;
+
+    @media(max-width: 500px) {
+        padding: 140px 0;
+    }
+
+    @media(max-width: 400px) {
+        padding: 100px 0;
+    }
+
+    .slider-container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @media (max-width: 1350px) {
+            max-width: 1000px;
+        }
+
+        @media (max-width: 1150px) {
+            max-width: 800px;
+        }
+
+        @media (max-width: 900px) {
+            max-width: 600px;
+        }
+
+        @media (max-width: 700px) {
+            max-width: 80%;
+        }
+
+        @media (max-width: 580px) {
+            max-width: 100%;
+        }
+    }
+
+
+    .slider-content {
+        position: relative;
+
+        .swiper-custom {
+            max-width: 785px;
+
+            @media (max-width: 1150px) {
+                max-width: 650px;
+            }
+
+            @media (max-width: 900px) {
+                max-width: 470px;
+            }
+
+            @media (max-width: 700px) {
+                max-width: 330px;
+            }
+
+            @media (max-width: 500px) {
+                max-width: 270px;
+            }
+
+            @media (max-width: 360px) {
+                max-width: 240px;
+            }
+
+            .slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+
+                .slide-quotes {
+                    margin-bottom: 34px;
+
+                    @media (max-width: 700px) {
+                        display: none;
+                    }
+                }
+
+                .slide-quotes-xs {
+                    display: none;
+                    margin-bottom: 34px;
+                    margin: 0 auto 34px;
+
+                    @media (max-width: 700px) {
+                        display: block;
+                    }
+                }
+
+                .slide-headline {
+                    color: #D3B47F;
+                    text-align: center;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                }
+
+                .slide-text {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 40px;
+                    margin-bottom: 40px;
+                }
+
+                .slide-author {
+                    color: #D3B47F;
+                    text-align: center;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;
+                    letter-spacing: 5.88px;
+                }
+
+                @media (max-width: 700px) {
+                    .slide-headline {
+                        font-size: 30px;
+                    }
+
+                    .slide-text {
+                        font-size: 12px;
+                    }
+                }
+
+                @media (max-width: 500px) {
+                    .slide-headline {
+                        font-size: 24px;
+                        line-height: 25px;
+                    }
+
+                    .slide-text {
+                        font-size: 10px;
+                        line-height: 25px;
+                    }
+
+                    .slide-author {
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+
+        .slider-nav {
+            position: absolute;
+            padding: 0;
+            width: 100%;
+            top: calc(50% - 48px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 0;
+
+            .arrowLeft,
+            .arrowRight {
+                padding: 10px;
+                cursor: pointer;
+                z-index: 1;
+            }
+
+            .arrowLeftDisabled,
+            .arrowRightDisabled {
+                padding: 10px;
+                pointer-events: none;
+                z-index: 1;
+            }
+
+            @media (max-width: 700px) {
+
+                .arrowLeft,
+                .arrowRight,
+                .arrowLeftDisabled,
+                .arrowRightDisabled {
+                    padding: 0;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            @media (max-width: 360px) {
+
+                .arrowLeft,
+                .arrowRight,
+                .arrowLeftDisabled,
+                .arrowRightDisabled {
+                    padding: 0;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+}

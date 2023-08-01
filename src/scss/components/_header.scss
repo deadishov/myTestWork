@@ -307,6 +307,10 @@
             background: #3A4574;
             border: none;
             transition: filter 0.3s;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
 
             &:hover {
                 filter: brightness(1.2);

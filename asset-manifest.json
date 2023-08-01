@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/myTestWork/static/css/main.06c24322.css",
+    "main.js": "/myTestWork/static/js/main.8d2d5715.js",
+    "static/media/downstairs.jpg": "/myTestWork/static/media/downstairs.7e5b58fa6cca7f6b2fe2.jpg",
+    "static/media/MainBackground.png": "/myTestWork/static/media/MainBackground.effc456c79a92d1fc982.png",
+    "static/media/room.jpg": "/myTestWork/static/media/room.3c62d828052f94c01eea.jpg",
+    "static/media/XSheaderLogo.svg": "/myTestWork/static/media/XSheaderLogo.cb3bc6c45a3e0fc6db57acd1be43b059.svg",
+    "static/media/headerLogo.svg": "/myTestWork/static/media/headerLogo.1798e44b43ec2f4d9d426664fe1b9965.svg",
+    "static/media/viber.svg": "/myTestWork/static/media/viber.d2691f7dfbcb48e3d95262291c325684.svg",
+    "static/media/insta.svg": "/myTestWork/static/media/insta.f0b7189e2677a46785f8f55a2f2d14c8.svg",
+    "static/media/whatsApp.svg": "/myTestWork/static/media/whatsApp.cfcfcc1f0eec774a8a40c03e27210179.svg",
+    "static/media/headerPhone.svg": "/myTestWork/static/media/headerPhone.9aa8dd80a628e6c4bbf094dbc81c0076.svg",
+    "static/media/quotes.svg": "/myTestWork/static/media/quotes.4ee5ee4035d6b78c15f2ff57cda0dd63.svg",
+    "static/media/quotes-xs.svg": "/myTestWork/static/media/quotes-xs.8798f87b4eb869600a3113d56d897bee.svg",
+    "index.html": "/myTestWork/index.html",
+    "static/media/close-button.svg": "/myTestWork/static/media/close-button.529b64ad284a858c8b053013aec9a0f2.svg",
+    "static/media/arrowLeftDisabled.svg": "/myTestWork/static/media/arrowLeftDisabled.cf9a32ca2bd46f3208e81856dc32a10e.svg",
+    "static/media/arrowRight.svg": "/myTestWork/static/media/arrowRight.09ce995a7a69f7e9c129c682c15123fe.svg",
+    "static/media/arrowLeft.svg": "/myTestWork/static/media/arrowLeft.20e64ea04af2bf5c488f0f64324d1c54.svg",
+    "static/media/arrowRightDisabled.svg": "/myTestWork/static/media/arrowRightDisabled.d1e827f4973cb09643a196ade6f4214f.svg",
+    "static/media/dots.svg": "/myTestWork/static/media/dots.f00088af44ee94910eada1c93246c64d.svg",
+    "main.06c24322.css.map": "/myTestWork/static/css/main.06c24322.css.map",
+    "main.8d2d5715.js.map": "/myTestWork/static/js/main.8d2d5715.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06c24322.css",
+    "static/js/main.8d2d5715.js"
+  ]
+}

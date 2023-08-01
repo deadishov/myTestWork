@@ -87,19 +87,19 @@ function App() {
           </ul>
           <div className="navbar-phone">
             <a href="#" className="navbar-phone-link">
-              <img src={headerPhone} alt="" />
+              <img src={headerPhone} alt="phone" />
               <p className='navbar-phone-text'>+32 9 282 57 25</p>
             </a>
           </div>
           <div className="burger-social">
             <a href="#">
-              <img className="burger-social-img" src={whatsSVG} alt="" />
+              <img className="burger-social-img" src={whatsSVG} alt="social-icon" />
             </a>
             <a href="#">
-              <img className="burger-social-img" src={viberSVG} alt="" />
+              <img className="burger-social-img" src={viberSVG} alt="social-icon" />
             </a>
             <a href="#">
-              <img className="burger-social-img" src={instaSVG} alt="" />
+              <img className="burger-social-img" src={instaSVG} alt="social-icon" />
             </a>
           </div>
         </div>
@@ -127,7 +127,7 @@ function App() {
             </ul>
             <div className="navbar-phone">
               <a href="#" className="navbar-phone-link">
-                <img src={headerPhone} alt="" />
+                <img src={headerPhone} alt="phone" />
                 <p className='navbar-phone-text'>+32 9 282 57 25</p>
               </a>
             </div>
@@ -168,9 +168,9 @@ function App() {
               }
             </ul>
             <div className="images-block">
-              <img className='downstairs-img' src={downstairsImg} alt="downstairs image" />
+              <img className='downstairs-img' src={downstairsImg} alt="downstairs" />
               <div className='rectangle'></div>
-              <img className='room-img' src={roomImg} alt="room image" />
+              <img className='room-img' src={roomImg} alt="room" />
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@ function App() {
                   className='slide'
                 >
                   <img className="slide-quotes" src={qoutesSvg} alt="quotes" />
-                  <img className="slide-quotes-xs" src={quotesXS} alt="" />
+                  <img className="slide-quotes-xs" src={quotesXS} alt="quotes" />
                   <p className="slide-headline">{slide.headline}</p>
                   <p className="slide-text">{slide.sliderText}</p>
                   <p className="slide-author">{slide.author}</p>
@@ -219,7 +219,7 @@ function App() {
         </div>
       </section>
       <div className={openModal ? "modal open" : "modal"}>
-        <img onClick={handleModal} src={closeButton} className='modal-close' alt="" />
+        <img onClick={handleModal} src={closeButton} className='modal-close' alt="closeButton" />
         <h2 className="modal-title">Request a call</h2>
         <Form />
       </div>

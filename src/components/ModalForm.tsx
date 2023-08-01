@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 
 interface FormData {
     firstName: string;
@@ -15,6 +15,8 @@ export const Form: React.FC = () => {
         message: '',
     });
 
+    const [formSubmitted, setFormSubmitted] = useState(false);
+
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData((prevFormData) => ({
@@ -26,7 +28,7 @@ export const Form: React.FC = () => {
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3000/deadishov/myTestWork', {
+            const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -35,7 +37,7 @@ export const Form: React.FC = () => {
             });
 
             if (response.ok) {
-                console.log('Form submitted successfully!');
+                setFormSubmitted(true);
             } else {
                 console.error('Form submission failed.');
             }
@@ -43,6 +45,13 @@ export const Form: React.FC = () => {
             console.error('Error:', error);
         }
     };
+
+    useEffect(() => {
+        if (formSubmitted) {
+            console.log('Form submitted successfully!');
+            // Show any success message to the user here, or perform any other actions after successful submission.
+        }
+    }, [formSubmitted]);
 
     return (
         <form onSubmit={handleSubmit}>
@@ -93,4 +102,5 @@ export const Form: React.FC = () => {
         </form>
     );
 };
+
 

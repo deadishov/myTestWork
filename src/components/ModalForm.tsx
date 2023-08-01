@@ -38,9 +38,16 @@ export const Form: React.FC = () => {
 
             if (response.ok) {
                 setFormSubmitted(true);
+                setFormData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    message: ''
+                })
             } else {
                 console.error('Form submission failed.');
             }
+
         } catch (error) {
             console.error('Error:', error);
         }
